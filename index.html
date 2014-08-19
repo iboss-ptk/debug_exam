@@ -8,11 +8,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DEBUG Exam | พบจุดอ่อน ก่อนลงสนามจริง</title>
+    <title>DEBUG Exam | พบจุดอ่อน ก่อนลงสนามสอบจริง</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/freelancer.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -22,128 +23,208 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-</head>
+  </head>
 
-<body id="page-top" class="index">
+  <body id="page-top" class="index">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=122156844461260&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">DEBUG</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#intro">DEBUG คืออะไร?</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">เกี่ยวกับเรา</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#testing">รายละเอียดการสอบ</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">ติดต่อเรา</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#page-top">DEBUG</a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
 
-    <header>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#intro">DEBUG คืออะไร?</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about">เกี่ยวกับเรา</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#testing">รายละเอียดการสอบ</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#contact">ติดต่อเรา</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<header>
+    <div class="parallax top-bg vp-fit" data-velocity=".5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/debug-logo.png" alt="">
+                    <img class="img-responsive stroke" src="img/debug-logo.png" alt="" data-scroll-reveal="enter top after 0.2s">
                     <div class="intro-text">
-                        <span class="name">Welcome to DEBUG</span>
-                        <hr class="star-light">
-                        <span class="skills">พบจุดอ่อน ก่อนลงสนามจริง</span>
+                        <div  data-scroll-reveal="enter left after 1s">
+                            <span class="name">DEBUG Exam</span>
+                        </div>
+                        <hr class="star-light" data-scroll-reveal="enter">
+                        <div  data-scroll-reveal="enter right after 1s">
+                            <span class="skills">พบจุดอ่อน ก่อนลงสนามสอบจริง</span>
+                        </div>
+                        <div data-scroll-reveal="enter bottom after 1.5s">
+                            <button class="btn btn-lg btn-outline btn-header" type="button">เปิดให้ลงทะเบียน เร็วๆ นี้ :)</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <section id="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>DEBUG คืออะไร?</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <p><b>DEBUG</b> คือ การสอบวัดความรู้นักเรียนระดับมัธยมศึกษาตอนปลาย จัดทำโดยคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</p>
-                    <p>ซึ่งเป็นการจำลองการสอบเข้าเรียนต่อในระดับมหาวิทยาลัย โดยเป็นการจำลองการสอบวิชาคณิตศาสตร์ในการสอบ 7 วิชาสามัญ เพื่อให้น้องๆ รู้ถึงขีดความสามารถและความพร้อมของตนเองก่อนที่จะสอบจริง</p>
-                    <p>นอกจากนี้ยังเป็นการลองสนามสอบและฝึกปฏิบัติตัวตามกฏระเบียบของห้องสอบ เช่น การระบายรหัสคำตอบ เป็นต้น ทั้งนี้เพื่อรับมือกับความกดดันที่จะเกิดขึ้นจริงในห้องสอบอีกด้วย</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h3>การประเมินผลจากการสอบ</h3>
-                    <p>ภายหลังการสอบ จะมีการประเมินผลด้วยคอมพิวเตอร์อย่างละเอียดโดยวิเคราะห์แยกเป็นรายบุคคล เพื่อให้น้องสามารถประเมินความสามารถของตนเองเทียบกับนักเรียนคนอื่นๆ ทั่วประเทศและทำให้น้องพบจุดบกพร่องของตนเองในวิชาคณิตศาสตร์อย่างละเอียด ที่สำคัญที่สุดน้องจสามารถวางแผนในการอ่านหนังสือก่อนที่จะไปเจอข้อสอบจริง</p>
-                </div>
+<section id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center" data-scroll-reveal="enter bottom">
+                <h2>DEBUG คืออะไร?</h2>
+                <hr class="star-primary">
+                <br>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 text-center" data-scroll-reveal="enter bottom after 0.8s">
+                <img src="img/icon/calculator.svg">
+                <h3>วัดความรู้</h3>    
+                <p>
+                    DEBUG คือ การสอบวัดความรู้คณิตศาสตร์ของนักเรียนระดับมัธยมศึกษาตอนปลาย จัดทำโดยคณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย โดยมีจุดประสงค์ให้ผู้สอบได้รับรู้ถึงระดับศักยภาพทางด้านคณิตศาสตร์ของตน และค้นพบจุดแข็งจุดอ่อนของตัวเอง
 
-    <section class="danger" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>เกี่ยวกับเรา</h2>
-                    <hr class="star-light">
-                </div>
+                </p>
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <p>เราคือ <b>คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</b> ซึ่งเป็นสถาบันชั้นนำระดับประเทศที่ถือได้ว่าเป็นแหล่งรวมผู้มีความรู้ ความสามารถในหลายสาขาวิชา </p>
-                    <p>นอกจากความรู้ ความสามารถทางวิชาการแล้ว เรายังเข้าใจสภาพปัญหาที่แท้จริงในการสอบผ่านมุมมองของผู้ที่เคยมีประสบการณ์ในการสอบมาก่อน บางรุ่นอยู่ในช่วงรอยต่อของการเปลี่ยนแปลงระบบการสอบ บางรุ่นอยู่ในช่วงระบบการสอบแบบใหม่ ซึ่งทำให้เราเข้าใจถึงสภาพความรู้สึกกดดันจากการสอบและปัญหาในการทำข้อสอบ</p>
-                    <p>สิ่งเหล่านี้ทำให้น้องๆ ที่จะเข้าสอบมุ่นใจได้ว่าน้องจะได้รับประโยชน์สูงสุดจากการเข้าร่วมสอบวัดความรู้นักเรียนระดับมัธยมศึกษาตอนปลายในครั้งนี้อย่างแน่นอน</p>
-                </div>
+
+            <div class="col-md-4 col-sm-12 text-center" data-scroll-reveal="enter bottom after 0.6s">
+                <img src="img/icon/clock.svg">
+                <h3>เสมือนจริง</h3>
+                <p>
+                    การสอบถูกออกแบบมาโดยการจำลองข้อสอบคณิตศาสตร์ในการสอบ 7 วิชาสามัญ เพื่อให้ผู้เข้าสอบได้สัมผัสกับบรรยากาศที่เสมือนกับการสอบจริง บรรยากาศที่กดดันจริงๆ และเวลาที่จำกัดจริงๆ และใช้รูปแบบการสอบแบบเดียวกัน เพื่อให้ได้เคยชินกับการสอบก่อนลงสนามจริง
+
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-12 text-center" data-scroll-reveal="enter bottom after 0.4s">
+                <img src="img/icon/aim.svg">
+                <h3>ชี้ปัญหา</h3>
+                <p>
+                    ภายหลังการสอบ จะมีการประเมินผลอย่างละเอียดเพื่อให้ได้ประเมินความสามารถของตัวเองเมื่อเทียบกับผู้เข้าสอบคนอื่นๆ และให้ได้พบกับจุดบกพร่องของตัวเองเพื่อวางแนวทางในการวางแผนเตรียมตัวได้อย่างเหมาะสมมากขึ้นก่อนจะสอบจริงในอีกไม่กี่เดือนข้างหน้า
+
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="testing">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>รายละเอียดการสอบ</h2>
-                    <hr class="star-primary">
-                </div>
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h3>แนวข้อสอบ</h3>
-                    <p>ข้อสอบแต่ละข้อจะสามารถวัดได้ว่าน้องมีความพร้อมในหัวข้อที่ต้องการทดสอบหรือยัง ดังนั้น หลังการสอบน้องจะรู้ตัวเองในทันทีว่า ความพร้อมของน้องในวิชาคณิตศาสตร์แต่ละหัวข้อเป็นอย่างไร ซึ่งจะเป็นแนวทางที่ดีที่จะทำให้น้องกลับไปทบทวนเพิ่มเติมความรู้ในแต่ละหัวข้อให้มีความพร้อมมากขึ้น</p>
-                    <p>ข้อสอบที่ใช้วัดความรู้เป็นข้อสอบที่มีความยาก ง่าย ใกล้เคียงกับข้อสอบวิชาคณิตศาสตร์ 7 วิชาสามัญ ไม่ใช่ข้อสอบวัดความเป็นเลิศหรือข้อสอบแข่งขันวิชาการ ดังนั้นน้องจึงไม่ต้องกังวลถึงความรู้นอกเหนือหลักสูตร</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h3>ผู้เข้าสอบ</h3>
-                    <p>นักเรียนระดับมัธยมศึกษาตอนปลาย ระดับชั้นใดก็ได้ที่ต้องการทราบถึงขีดความสามารถในวิชาคณิตศาสตร์และจุดด้อยของตนเองในการทำข้อสอบ</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h3>กำหนดการสอบ</h3>
-                    <ul>
-                        <li><b>เปิดรับสมัคร:</b> TBA – 15 กันยายน 2557</li>
-                        <li><b>วันสอบ:</b> 11 ตุลาคม 2557</li>
-                        <li><b>วันประกาศผลสอบ:</b> 21 ตุลาคม 2557</li>
+<section class="qoute parallax" id="qoute1" data-velocity=".5">
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center vertical-center" data-scroll-reveal="enter left after 0.4s">
+            <p>"Do not work hard, work intelligent."</p>
+        </div>
+    </div>
+    
+</div>
+</section>
+
+<section class="success" id="exam">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center" data-scroll-reveal="enter bottom after 0.4s">
+                <h2>ข้อสอบ</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-2 col-sm-12 text-center" data-scroll-reveal="enter left after 0.8s">
+                <img src="img/icon/paper.svg">
+                <p><b>ฉบับที่ 1</b></p>
+            </div>
+            <div class="col-md-6 col-sm-12" data-scroll-reveal="enter right after 1s">
+                <p><b><u>ชุดพื้นฐานทางการคำนวณ</u></b></p>
+                <p>ข้อสอบฉบับนี้จะเน้นไปที่พื้นฐานในบทต่างๆ เพื่อทดสอบความรู้ความเข้าใจในเนื้อหา ความเร็วในการวิเคราะห์โจทย์และความแม่นยำในการคิดคำนวณ      ผู้เข้าสอบส่วนใหญ่มักเตรียมตัวสอบโดยเร่งอ่านหนังสือให้จบครบทุกบท แต่กลับมองข้ามความสำคัญของการคิดเลขไป หารู้ไม่ว่าเด็กส่วนใหญ่ที่สอบได้คะแนนน้อยนั้นไม่ได้มีปัญหาในความรู้ระดับมัธยมปลายเลย แต่มักจะพลาดคะแนนไปกับการคิดเลขผิดระหว่างบรรทัดซะมากกว่า </p>
+            </div>
+</div>
+<hr data-scroll-reveal="enter bottom after 1.2s">
+<div class="row">
+           <div class="col-md-2 col-md-offset-2 col-sm-12 text-center" data-scroll-reveal="enter left after 1.2s">
+                <img src="img/icon/paper.svg">
+                <p><b>ฉบับที่ 2</b></p>
+            </div>
+            <div class="col-md-6 col-sm-12" data-scroll-reveal="enter right after 1.4s">
+                <p><b><u>คณิตศาสตร์ (7 วิชาสามัญ)</u></b></p>
+                <p>ข้อสอบชุดนี้ถูกออกแบบมาให้เหมือนกับข้อสอบ 7 วิชาสามัญของ สทศ. ทุกประการ ทั้งจำนวนข้อตามสัดส่วนคะแนนจริง และความยากง่ายของข้อสอบเพื่อให้ผู้สอบมีโอกาสได้เห็นความสามารถในการจัดการกับข้อสอบคณิตศาสตร์สไตล์ 7 วิชาสามัญซึ่งเป็นข้อสอบแนว speed test ที่ไม่ได้ยากมาก แต่จะต้องมีพื้นฐานที่ดี รู้จักสังเกตอะไรบางอย่างถึงจะจัดการกับโจทย์ได้อย่างรวดเร็ว </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="danger" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center" data-scroll-reveal="enter bottom after 0.4s">
+                <h2>เกี่ยวกับเรา</h2>
+                <hr class="star-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2" data-scroll-reveal="enter bottom after 0.8s">
+                <p>เราคือ <b>คณะวิศวกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย</b> ซึ่งเป็นสถาบันชั้นนำระดับประเทศที่ถือได้ว่าเป็นแหล่งรวมผู้มีความรู้ ความสามารถในหลายสาขาวิชา </p>
+                <p>นอกจากความรู้ ความสามารถทางวิชาการแล้ว เรายังเข้าใจสภาพปัญหาที่แท้จริงในการสอบผ่านมุมมองของผู้ที่เคยมีประสบการณ์ในการสอบมาก่อน บางรุ่นอยู่ในช่วงรอยต่อของการเปลี่ยนแปลงระบบการสอบ บางรุ่นอยู่ในช่วงระบบการสอบแบบใหม่ ซึ่งทำให้เราเข้าใจถึงสภาพความรู้สึกกดดันจากการสอบและปัญหาในการทำข้อสอบ</p>
+                <p>สิ่งเหล่านี้ทำให้น้องๆ ที่จะเข้าสอบมุ่นใจได้ว่าน้องจะได้รับประโยชน์สูงสุดจากการเข้าร่วมสอบวัดความรู้นักเรียนระดับมัธยมศึกษาตอนปลายในครั้งนี้อย่างแน่นอน</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="testing">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>รายละเอียดการสอบ</h2>
+                <hr class="star-primary">
+            </div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>แนวข้อสอบ</h3>
+                <p>ข้อสอบแต่ละข้อจะสามารถวัดได้ว่าน้องมีความพร้อมในหัวข้อที่ต้องการทดสอบหรือยัง ดังนั้น หลังการสอบน้องจะรู้ตัวเองในทันทีว่า ความพร้อมของน้องในวิชาคณิตศาสตร์แต่ละหัวข้อเป็นอย่างไร ซึ่งจะเป็นแนวทางที่ดีที่จะทำให้น้องกลับไปทบทวนเพิ่มเติมความรู้ในแต่ละหัวข้อให้มีความพร้อมมากขึ้น</p>
+                <p>ข้อสอบที่ใช้วัดความรู้เป็นข้อสอบที่มีความยาก ง่าย ใกล้เคียงกับข้อสอบวิชาคณิตศาสตร์ 7 วิชาสามัญ ไม่ใช่ข้อสอบวัดความเป็นเลิศหรือข้อสอบแข่งขันวิชาการ ดังนั้นน้องจึงไม่ต้องกังวลถึงความรู้นอกเหนือหลักสูตร</p>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>ผู้เข้าสอบ</h3>
+                <p>นักเรียนระดับมัธยมศึกษาตอนปลาย ระดับชั้นใดก็ได้ที่ต้องการทราบถึงขีดความสามารถในวิชาคณิตศาสตร์และจุดด้อยของตนเองในการทำข้อสอบ</p>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>กำหนดการสอบ</h3>
+                <ul>
+                    <li><b>เปิดรับสมัคร:</b> TBA – 15 กันยายน 2557</li>
+                    <li><b>วันสอบ:</b> 11 ตุลาคม 2557</li>
+                    <li><b>วันประกาศผลสอบ:</b> 21 ตุลาคม 2557</li>
 
                 </div>
                 <div class="col-lg-8 col-lg-offset-2">
@@ -192,36 +273,39 @@
                             <li><a href="https://www.facebook.com/debugexam" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a> facebook.com/debugexam
                             </li>
                             <!--li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a> Twitter
-                            </li-->
-                        </ul>
-                    </div>
+                        </li-->
+                    </ul>
+                    <div class="fb-facepile" data-href="https://www.facebook.com/debugexam" data-max-rows="1" data-colorscheme="light" data-size="large" data-show-count="true"></div>
                 </div>
             </div>
         </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; 2014 - DEBUG
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="scroll-top page-scroll visible-xs visble-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
     </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; 2014 - DEBUG
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-    <script src="js/freelancer.js"></script>
+<div class="scroll-top page-scroll visible-xs visble-sm">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
 
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpAnimatedHeader.js"></script>
+<script src="js/freelancer.js"></script>
+<script src="js/scrollReveal.js"></script>
+<script src="js/jquery.scrolly.js"></script>
+<script src="js/custom.js"></script>
 </body>
 
 </html>
