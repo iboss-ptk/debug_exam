@@ -7,7 +7,7 @@ window.scrollReveal = new scrollReveal(
             move: '24px',
             over: '0.66s',
             easing: 'ease-in-out',
-            viewportFactor: .33,
+            viewportFactor: .01,
             reset: true,
             init: true
           }
