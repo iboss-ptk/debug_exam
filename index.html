@@ -36,13 +36,24 @@
 
   <body id="page-top" class="index">
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53955889-1', 'auto');
+  ga('send', 'pageview');
+
+  (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=122156844461260&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -151,7 +162,7 @@
 </section>
 
 <section class="qoute parallax" id="qoute1" data-velocity=".5">
- <div class="container">
+   <div class="container">
     <div class="row">
         <div class="col-lg-12 text-center vertical-center" data-scroll-reveal="enter left after 0.4s">
             <p>"Do not work hard, work intelligent."</p>
@@ -199,7 +210,7 @@
         </div>
         <div style="height:40px"></div>
         <div class="row">
-         <div class="col-md-2 col-md-offset-2 col-sm-12 text-center" data-scroll-reveal="enter left after 1.2s">
+           <div class="col-md-2 col-md-offset-2 col-sm-12 text-center" data-scroll-reveal="enter left after 1.2s">
             <img src="img/icon/paper.svg">
             <p><b>ฉบับที่ 2</b></p>
         </div>
@@ -227,6 +238,7 @@
                 <ul>
                     <li><b>เปิดรับสมัคร:</b> วันนี้ – 15 กันยายน 2557</li>
                     <li><b>วันสอบ:</b> 11 ตุลาคม 2557</li>
+                    <li><b>เวลาสอบ</b>8.30 - 12.00 น.</li>
                     <li><b>วันประกาศผลสอบ:</b> 21 ตุลาคม 2557</li>
 
                 </div>
@@ -278,8 +290,11 @@
                             <li><a href="mailto:support@debugexam.com" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a> support@debugexam.com
                             </li>
                         </ul>
-                        <div class="fb-facepile" data-href="https://www.facebook.com/debugexam" data-max-rows="1" data-colorscheme="light" data-size="large" data-show-count="true"></div>
                     </div>
+
+                    <!-- facebook like box -->
+                    <!-- <div class="fb-facepile" data-href="https://www.facebook.com/debugexam" data-max-rows="1" data-colorscheme="light" data-size="large" data-show-count="true"></div> -->
+
                 </div>
             </div>
         </div>
